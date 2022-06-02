@@ -11,8 +11,8 @@
 
     <!-- Title Page-->
     <title>Register</title>
-
     @include('partials/css')
+
 
 </head>
 
@@ -24,11 +24,11 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="{{ asset ('admin/images/icon/logo.png')}}" alt="CoolAdmin">
+                            <img src="{{ asset('admin/images/icon/logo.png')}}" alt="CoolAdmin">
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="{{ route('register')}}" method="post">
+                            <form action="{{route('register')}}" method="post">
                                 @csrf
                                 <div class="form-group">
                                     <label>Nama</label>
@@ -62,7 +62,7 @@
                             <div class="register-link">
                                 <p>
                                     Already have account?
-                                    <a href="{{ route('login')}}">Login</a>
+                                    <a href="{{route('login')}}">Login</a>
                                 </p>
                             </div>
                         </div>
